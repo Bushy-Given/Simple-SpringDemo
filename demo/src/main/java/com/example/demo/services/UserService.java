@@ -20,4 +20,8 @@ public class UserService {
 	public User addUser(User user) {		
 		return userRepository.save(user);
 	}
+	//find all users
+	public Iterable<User> findAllUsers(){
+		return userRepository.findAll();
+	}
 }
